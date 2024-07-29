@@ -1,0 +1,24 @@
+[package]
+name = "journal-server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+journal-lib = { path = "../journal-lib" }
+
+# axum = { version="0.7.5" } 
+axum = { path = "/work/projects/journal/axum/axum" }
+# "1.39.2"
+tokio = { version="1.0", features=["full"] }
+# "0.5.2"
+tower-http = { version="0.5.0", features = ["cors"] }
+
+
+serde = { version = "1", features = ["derive"] }
+uuid = { version = "1.10.0", features = ["v4", "serde"] }
+chrono = { version = "0.4.38", features = ["serde"]}
+serde_json = "1.0.120"
+serde_yaml = "0.9.34"
+directories-next = "2.0.0"

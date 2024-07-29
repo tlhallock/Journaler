@@ -1,0 +1,7 @@
+[workspace]
+members = [
+	"journal-lib"
+, "journal-server", "journal-ui"]
+
+
+resolver = "2"
